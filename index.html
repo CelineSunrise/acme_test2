@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+<body> <!-- 헤더 -->
+    <header>
+        <div class="container cf">
+            <!-- <h1><a href=""><img src="" alt=""></a></h1> -->
+            <h1 class="logo"><a href="index.html">acme</a></h1>
+            <!-- 검색차원, 스크린리더 차원에서도 글자를 넣고 css로 그림으로 처리하는 것이 좋다 -->
+            <nav>
+                <ul class="cf">
+                    <li><a href="index.html">home</a><span>/</span><a href="about.html">about</a></li>
+                    <li><a href="signin.html" class="btn"><i class="fa-solid fa-lock"></i>Sign in</a></li>
+                    <li><a href="signup.html" class="btn highlight_bg">Sign up</a></li>                
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //헤더 -->
+    <div class="banner content-top-pd" role="banner">
+        <h2 class="banner_tt">portfolio manager</h2>
+        <h3 class="content_tt">It’s awesome. And it’s FREE!</h3>
+        <a href="signup.html" class="btn big highlight_bg">Sign up for free</a>
+        <img src="images/banner1.png" alt="">
+    </div>
+    <main class="container">
+        <section class="feature content-pd">
+            <h2 class="hidden">features</h2>
+            <ul class="cf">
+                <li>
+                    <span class="icon">
+                        <i class="fa-solid fa-user"></i>
+                    </span>
+                    <h3>This is a feature title.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    </p>
+                </li>
+                <li>
+                    <span class="icon">
+                        <i class="fa-solid fa-list"></i>
+                    </span>
+                    <h3>This is a feature title.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    </p>
+                </li>
+                <li>
+                    <span class="icon">
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                    <h3>This is a feature title.</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section class="testimonial content-pd">
+            <h2 class="hidden">testimonial</h2>
+            <div class="slide_wrapper">
+                <ul class="slide_container">
+                    <li>
+                        <blockquote>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <span>Adi, Designer</span>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <span>Adi, Designer</span>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            </p>
+                            <span>Adi, Designer</span>
+                        </blockquote>
+                    </li>
+                </ul>
+                <p class="controls">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="cta content-pd">
+            <h2 class="content_tt">Create your free account.</h2>
+            <p class="content_desc">No hidden fees, no credit card required.</p>
+            <a href="signup.html" class="btn big highlight_bg">Sign up for free</a>
+        </div>
+        <address class="content-pd">
+            <p>&copy; 2022. All rights reserved.</p>
+            <p>Question? Email us <a href="mailto:office@product.com" class="link">office@product.com</a></p>
+        </address>
+    </footer>
+</body>
+</html>

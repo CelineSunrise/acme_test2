@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in - Acme</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+</head>
+<body> <!-- 헤더 -->
+    <header>
+        <div class="container cf">
+            <!-- <h1><a href=""><img src="" alt=""></a></h1> -->
+            <h1 class="logo"><a href="index.html">acme</a></h1>
+            <!-- 검색차원, 스크린리더 차원에서도 글자를 넣고 css로 그림으로 처리하는 것이 좋다 -->
+        </div>
+    </header>
+    <!-- //헤더 -->
+
+    <main class="banner">
+        <h2 class="content-pd banner_tt">sign in</h2>
+    <!--
+        <form action="" method="post">
+            <p>
+                <i class="fa-regular fa-envelope"></i>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email address">       
+            </p>
+            <p>
+                <i class="fa-solid fa-lock"></i>
+                <label for="pw"></label>
+                <input type="password" name="pw" id="pw" placeholder="Password">          
+            </p>
+            <p>
+                <button type="submit">sign in</button>
+            </p>
+            <p>
+                <a href="">I forgot my password</a>          
+            </p>            
+        </form>        
+    -->
+<!-- 이 경우 fieldset은 굳이 필요없음 -->
+
+        <form action="#" method="post">
+            <p class="field">
+                <label for="email" class="hidden">email</label>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="email" name="email" id="email" placeholder="Email address" required autofocus>
+                <!-- 해당 디자인을 코딩하는 데 html 상에서는 이렇게 쓰면 되고 css 처리는 input의 범위를 어디까지로 보는지에 따라 두 가지로 작성 가능 -->
+            </p>
+            <p class="field">
+                <label for="pw" class="hidden">password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" name="password" id="pw" placeholder="Password" required>
+
+            </p>
+<!--        
+    </form>
+        <form action="#" method="post">
+            <p class="field">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <p class="field">
+                <label for="pw">password</label>
+                <input type="password" name="password" id="pw">
+            </p>
+-->
+            <p class="field button">
+                <input type="submit" value="sign in">
+                <!-- <button>sign in</button> -->
+            </p>
+        </form>
+        <!-- 블록요소인 form 태그 아래에 마진을 주고 블록 전체에 text-align:center를 주면 a 태그 위에 sectioning을 안 주어도 된다-->
+        <a href="" class="link">I forgot my password</a>
+    </main>
+    <footer>
+        <div class="cta content-pd">
+            <h2 class="content_tt">Don’t have an account yet?</h2>
+            <p class="content_desc">Create one now.</p>
+            <a href="signup.html" class="btn big highlight_bg">Sign up</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* ---------------- qna ----------------------- */
+.qna_list {
+    width: 750px;
+    margin: 0 auto;
+}
+.qna_list li h3 {
+    background: #ebebeb;
+    line-height: 54px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 18px;
+}
+.qna_list li i {
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 13.5px);
+    opacity: 0.4;
+}
+.active h3 i {
+    opacity: 1;
+}
+.active h3 {
+    font-weight: bold;
+}
+.qna_list .contents {
+    padding: 15px 20px 40px;
+    display: none;
+}
+.active .contents {
+    display: block;
+
+}
+.qna_list li:not(:last-child) {
+    margin-bottom: 1px;
+}
+
+/* ------------------ portfolio ------------------ */
+
+.portfolio .slide_wrapper {
+    height: 405px;
+}
+.portfolio .slide_wrapper li {
+    text-align: center;
+}
+.portfolio .slide_wrapper li p {
+    width: 625px;
+    margin: 27px auto;
+    line-height: 27px;
+}

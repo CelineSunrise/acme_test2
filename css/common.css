@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url('normalize.css');
+@import url('reset.css');
+@import url('all.min.css'); /* 정석은 css파일명을 따옴표 안에 써야 하나 없어도 됨 */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+
+/* ------------------------ 레이아웃 -------------------------- */
+.container {
+    /* max-width: 1272px;
+    width: 80%; */
+    min-width: 1272px;
+    width: 80%;
+    margin: 0 auto;
+}
+.content-pd {
+    padding: 81px 0; /* 위 아래 여백 그리드 3줄씩 디자인된 컨텐츠들 */
+}
+.content-top-pd {
+    padding-top: 81px;
+}
+.cf::after {
+    content:'';
+    clear: both;
+    display: block;
+}
+.hidden {
+    display: none;
+}
+hr {
+    border: none;
+    /* hr의 기본스타일인 입체적 형태를 단면으로 바꿔주는 방법; 이렇게 border를 위와같이 없앤 후에 1 이 한 줄을 추가해 주거나 2 아래 두줄을 추가해 주는 방법
+    border-top: 1px solid #a8a8a8; */
+    height: 1px;
+    background: #a8a8a8;
+}
+hr.small {
+    width: 750px;
+    margin: 0 auto;
+}
+.txt-center {
+    text-align: center;
+}
+/* ------------------------ 폰트위계 -------------------------- */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #2c2c2c;
+}
+.banner_tt, .content_tt, .content_desc {    
+    text-align: center;
+}
+.banner_tt {
+    font-size: 54px;
+    color: #3a99d8;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* tracking 50 (1em=1000)*/
+}
+.content_tt {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-bottom: 27px;
+    line-height: 27px;
+}
+.content_desc {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 54px;
+}
+
+/* ------------------------ 배색 -------------------------- */
+
+.btn.highlight_bg {
+    background: #9ac75b;
+    color: #55762c;
+}
+.banner {
+    background: #2d3e4f;
+    text-align: center;
+}
+
+
+/* ------------------------ 링크, 버튼 -------------------------- */
+.btn {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 0 20px;
+    background: #ebebeb;
+    line-height: 39px;
+    color: #6e6e6e;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.btn i {
+    margin-right: 10px;
+}
+.btn.big {
+    line-height: 54px;
+    padding: 0 30px;
+}
+.link {
+    color: #9ac75b;
+    text-decoration: underline;
+}
+
+/* ------------------ HEADER --------------------------- */
+
+header {
+    padding: 27px 0;
+    background: #fff;
+    box-shadow: 0 5px 3px rgba(0,0,0,.1);
+    /* 
+    box-shadow: x y blur [size] color;
+     */
+}
+
+header h1 {
+    float: left;
+}
+header nav {
+    float: right;
+    /* padding: 7.5px 0; */
+    line-height: 54px;
+}
+header nav li {
+    float: left;
+}
+header nav li + li {
+    margin-left: 10px;
+}
+header nav li:first-child {
+    margin-right: 60px;
+    color: #a8a8a8;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+header nav li:first-child a {
+    color: #2c2c2c;
+}
+header nav li:first-child span {
+    margin: 0 10px;
+}
+header .logo a {
+    display: block;
+    width: 161px;
+    height: 54px;
+    background: url('../images/logo.png') no-repeat;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+
+/* ----------------- slide show ---------------- */
+.slide_wrapper {
+    position: relative;
+    overflow: hidden;    
+}
+.slide_container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.slide_container li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.slide_container li:nth-child(2) {
+    left: 100%;
+}
+.slide_container li:nth-child(3) {
+    left: 200%;
+}
+.slide_wrapper .controls i {
+    position: absolute;
+    top: calc(50% - 22.5px);
+    color: #ebebeb;
+    font-size: 45px;
+    cursor: pointer;
+}
+.slide_wrapper .controls i:first-child {
+    left: 0;
+}
+.slide_wrapper .controls i:last-child {
+    right: 0;
+}
+
+/* --------------- FOOTER ------------------ */
+footer .cta {
+    background: #292c2e;
+    color: #fff;
+    text-align: center;
+}
+footer .cta p {
+    color: #a8a8a8;
+}
+footer address {
+    text-align: center;
+}
+footer address p + p {
+    margin-top: 27px;
+}

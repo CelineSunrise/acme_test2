@@ -1,0 +1,64 @@
+/* ------------------ BANNER -------------------- */
+
+.banner h2 {
+    margin-bottom: 27px;
+}
+.banner h3 {
+    margin-bottom: 54px;
+    color: #fff;
+}
+.banner img {
+    display: block;
+    margin: 44px auto 0;
+}
+/* ---------------- Feature ------------------- */
+
+.feature li {
+    float: left;
+    width: 408px;
+}
+.feature li + li {
+    margin-left: 24px;
+}
+.feature li h3 {
+    font-size: 24px;
+    line-height: 27px;
+    margin: 27px 0;
+}
+.feature * {
+    text-align: center;
+}
+.feature .icon {
+    border-radius: 50%;
+    border: 1px solid #439ccf;
+    line-height: 106px; /* border 1px 아래 위를 감안해 주어야 함 */
+    box-sizing: border-box;
+    width: 108px;
+    display: inline-block;
+    color: #439ccf;
+    font-size: 32px;
+}
+.feature li p {
+    line-height: 27px;
+}
+/* ------------------- Testimonial -------------- */
+.testimonial .slide_wrapper {
+    height: 162px;
+}
+.testimonial blockquote {
+    width: 840px;
+    margin: 0 auto;
+    font-size: 36px;
+    font-style: italic;
+    color: #489dcd;
+    font-weight: 300;
+    text-align: center;
+}
+.testimonial blockquote span {
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 27px;
+    margin-top: 58px;
+}

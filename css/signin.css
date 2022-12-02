@@ -1,0 +1,140 @@
+/* header .logo {
+    float: none;
+}
+header .logo a {
+    display: inline-block;
+    margin: 0 auto;    
+} */
+
+header .logo {
+    float: none;
+    display: inline-block;
+}
+header {
+    text-align: center;
+}
+/* .banner_tt {
+    margin-bottom: 81px;
+} */
+
+/* .banner input {
+    border: none;
+    width: 305px;
+    height: 54px;
+    border-radius: 2px;
+}
+.banner form p:not(:last-child) {
+    margin: 0 auto;
+    width: 350px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+
+.banner input[type='submit'] {
+    width: 348px;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner form p i {
+    color: #a8a8a8;
+    padding-left: 10px;
+} */
+
+.banner input {
+    border: none;
+    width: 350px;
+    height: 54px;
+    border-radius: 2px;
+    padding-left: 45px;
+    box-sizing: border-box;
+    line-height: 54px;
+    outline: none;
+}
+.banner form p {
+    position: relative;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+.banner form p i {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    color: #a8a8a8;
+    line-height: 54px;
+}
+.banner form input[type='submit'] {
+    background: none;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0;
+    font-weight: bold;
+}
+.banner .link {
+    display: inline-block;
+    margin: 70px auto 80px;
+}
+.banner form input:focus {
+    box-shadow: inset 0 0 7px rgba(0,0,0,.7);
+}
+/* .banner form input::-webkit-placeholder {
+    color: #a8a8a8;
+    font-style: italic;
+}
+.banner form input::-moz-placeholder {
+    color: #a8a8a8;
+    font-style: italic;
+}
+.banner form input::-ms-placeholder {
+    color: #a8a8a8;
+    font-style: italic;
+} */
+.banner form input::placeholder {
+    color: #a8a8a8;
+    font-style: italic;
+}
+footer .cta {
+    background: none;
+    color: #2c2c2c;
+}
+form {
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+}
+.feedback {
+    width: 262px;
+    background: #fff;
+    padding: 20px;
+    text-align: left;
+    line-height: 27px;
+    color: #f30000;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 60px);
+}
+.feedback p + p {
+    margin-top: 27px;
+}
+.box {
+    width: 0px;
+    height: 0px;
+    /* border: 10px solid lightpink; */
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent blue blue transparent;
+    margin: 50px auto;
+}
+.feedback::before {
+    content: '';
+    border-width: 8px 11px;
+    border-color: transparent white transparent transparent;
+    border-style: solid;
+    position: absolute;
+    top: 20px;
+    right: 100%;
+}
